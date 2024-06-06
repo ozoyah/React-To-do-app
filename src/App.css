@@ -1,38 +1,123 @@
-.App {
+* {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.main {
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  margin: 30px auto;
+}
+body {
+  background-color: #17181f;
+  color: #aaa;
+}
+
+li {
+  list-style-type: none;
+}
+
+.form {
+  display: flex;
+}
+
+.form input[type="text"] {
+  background: none;
+  border: 3px solid #303130;
+  border-radius: 10px;
+  color: #ffff;
+  display: block;
+  margin-right: 4px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.form button {
+  background-color: #61dafb;
+  border: 0;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.task {
+  background-color: #30313d;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.task :hover {
+  background-color: #3b3c49;
+}
+
+.task svg {
+  height: 25px;
+  margin-right: 6px;
+}
+
+.checkbox {
+  display: inline;
+  fill: #61dafb;
+  cursor: pointer;
+}
+
+.task-child {
+  display: flex;
+  width: 100%;
+  padding: 6px;
+  justify-content: space-between;
+}
+
+.task-child div:first-child {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.delete-btn {
+  fill: none;
+  background: none;
+  transition: all 0.2s;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.task-child:hover .delete-btn {
+  opacity: 1;
+}
+
+.delete-btn {
+  fill: rgb(161, 71, 66);
+}
+
+ul {
+  padding: 0;
+}
+
+.task .checked {
+  /* opacity: 0.3; */
+}
+
+.task .span {
+  position: absolute;
+  flex-grow: 3;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*   .deleteBtn {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.deleteBtn svg {
+  align-items: ;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  height: 25px; */
